@@ -28,8 +28,11 @@ varying levels of difficulty from the computer.
 
 #### Running locally
 To run locally, there are a few requirements that are needed first:
-`pip install Flask`
-`pip install Flask-Assets`
-`pip install numpy` (requires python-dev on linux, included on OSX I believe)
+```
+pip install Flask
+pip install Flask-Assets
+pip install numpy
+``` 
+(numpy requires python-dev on linux, included on OSX I believe)
 
 Then to run: `python application.py`
