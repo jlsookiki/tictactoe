@@ -24,3 +24,12 @@ computer.
 I tried to make the code as flexible as possible so there are still several enhancements that can be made.  Some of the
 interesting enhancements that could be made would be changing the icons for Human/Computer, changing board size, and
 varying levels of difficulty from the computer.
+
+
+#### Running locally
+To run locally, there are a few requirements that are needed first:
+`pip install Flask`
+`pip install Flask-Assets`
+`pip install numpy` (requires python-dev on linux, included on OSX I believe)
+
+Then to run: `python application.py`
