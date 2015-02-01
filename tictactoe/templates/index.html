@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>TicTacToe</title>
+    {%  assets "css_all" %}
+        <link rel="stylesheet" type="text/css" href="{{  ASSET_URL }}" >
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    {%  endassets %}
+
+    {%  assets 'js_all' %}
+        <script src="{{ ASSET_URL }}" type="text/javascript"></script>
+    {%  endassets %}
+
+</head>
+<body>
+<div class="page-header">
+  <h1 id="header">Tic Tac Toe</h1>
+</div>
+<div class="row container">
+  <div id="board" class="col-sm-7 col-sm-offset-2">
+    <div id="top" class="box-row">
+      <div class="box col-sm-6" id="top-left" value=""></div>
+      <div class="box col-sm-6" id="top-center" value=""></div>
+      <div class="box col-sm-6" id="top-right" value=""></div>
+    </div>
+    <div class="clearfix visible-md-block"></div>
+    <div id="middle" class="box-row">
+      <div class="box col-sm-6" id="middle-left" value=""></div>
+      <div class="box col-sm-6" id="middle-center" value=""></div>
+      <div class="box col-sm-6" id="middle-right" value=""></div>
+    </div>
+    <div class="clearfix visible-md-block"></div>
+    <div id="bottom" class="box-row">
+      <div class="box col-sm-6" id="bottom-left" value=""></div>
+      <div class="box col-sm-6" id="bottom-center" value=""></div>
+      <div class="box col-sm-6" id="bottom-right" value=""></div>
+    </div>
+  </div>
+  <div id="menu" class="col-sm-3">
+      <h1 id="menuHeader"> Menu</h1>
+      <button id="newGame" class="btn btn-primary btn-lg btn-block" href="#" role="button">New Game</button>
+      <button id="hint" class="btn btn-primary btn-lg btn-block" href="#" role="button">Hint</button>
+      <h5>First Player</h5>
+      <div class="btn-group" data-toggle="buttons">
+        <label class="playerSelector btn btn-default active">
+            <input type="radio" id="humanButton" name="firstPlayer" value="Human" /> Human
+        </label>
+        <label class="playerSelector btn btn-default">
+            <input type="radio" id="computerButton" name="quality[25]" value="Computer" /> Computer
+        </label>
+      </div>
+
+  </div>
+</div>
+<div class="row" id="winner">
+
+</div>
+
+</body>
+</html>

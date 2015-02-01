@@ -1,0 +1,25 @@
+.box{
+  border: 1px #000000 solid;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  line-height: 200px;
+}
+
+.centered {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#header{
+  text-align: center;
+}
+.winner{
+    text-align: center;
+    color: red;
+}
+
+#menuHeader{
+    text-align: center;
+}
