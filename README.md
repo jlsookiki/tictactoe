@@ -18,7 +18,7 @@ much more, in my opinion this was the optimal choice.  As far as determining whi
 #### Frontend
 My goal for the frontend was to make it as dumb as possible.  I offloaded as much computation as I could to the backend. 
 All the frontend does is keep track of a structure and pass it to the backend whenever it needs a next move by the 
-computer. 
+computer.  For layout and design I used a lightweight combination of Bootstrap and FontAwesome. 
 
 #### Future Enhancements
 I tried to make the code as flexible as possible so there are still several enhancements that can be made.  Some of the
