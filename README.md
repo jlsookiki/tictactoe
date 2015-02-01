@@ -13,7 +13,7 @@ For the backend, my original thought was to go with Ruby on Rails as that's what
 some thought, I decided RoR would be overkill - there were several things (asset pipeline, active record, etc) that 
 would come with a RoR instance that I would not be needing. So I went with a python microframework called Flask that
 I'm quite fond of.  This framework comes with the bare minimum needed to serve up web content. Since I didn't need 
-much more, in my opinion this was the optimal choice.
+much more, in my opinion this was the optimal choice.  As far as determining which moves to make, I used a simple version of the minMax algorithm to determine moves.  Since this algorithm is so memory intensive, I cache the initial moves to give the illusion to the user that everything is lighting fast.
 
 #### Frontend
 My goal for the frontend was to make it as dumb as possible.  I offloaded as much computation as I could to the backend. 
@@ -36,3 +36,5 @@ pip install numpy
 (numpy requires python-dev on linux, included on OSX I believe)
 
 Then to run: `python application.py`
+
+NOTE: Startup can be somewhat slow and memory intensive as it's running the algorithm for all the opening scenarios and caching them. Once it's been run once, the gameplay sees a significant performance boost
